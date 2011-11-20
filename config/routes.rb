@@ -1,6 +1,8 @@
 FinalRailsTutorialApp::Application.routes.draw do
   resources :users
   
+  get "regular_expressions/show"
+  
   get "users/new"
 
   get "pages/home"
@@ -18,6 +20,8 @@ FinalRailsTutorialApp::Application.routes.draw do
   match '/help',    :to => 'pages#help'
   
   match '/signup',  :to => 'users#new'
+  
+  match '/re',      :to => 'regular_expressions#show'
   
   root :to => 'pages#home' #a
 
