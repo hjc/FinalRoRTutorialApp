@@ -1,7 +1,19 @@
 FinalRailsTutorialApp::Application.routes.draw do
   resources :users
   
+  #resources :posts, :collection=>{:show => :get, :process => :post}
+
+  
+  post "regular_expressions/proc"
+  
   get "regular_expressions/show"
+  
+  get "regularExpressions/test"
+  
+  get "regularexpressions/test"
+  
+  get "regular_expressions/test"
+ 
   
   get "users/new"
 

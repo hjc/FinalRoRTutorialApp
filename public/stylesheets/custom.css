@@ -183,3 +183,60 @@ div.field, div.actions {
     font-size: 12px;
     list-style: square;
 }
+
+/* RE Expansion */
+
+.re_title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.field_start {
+    font-size: 25px;
+}
+
+.field_start input {
+    font_size: 1px;
+}
+
+#regex_body {
+    width: 500px;
+    height: 30px;
+    font-size: 25px;
+}
+
+#regex_opts {
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+}
+
+.re_body{
+    font-size: 20px;
+}
+
+#regex_string {
+    font-size: 20px;
+    width: 350px;
+    display: inline-table;
+}
+
+#regex_result_label {
+    float: right;
+    padding-right: 60px;
+}
+
+#regex_result {
+    font-size: 20px;
+    height: 30px;
+    float: right;
+    width: 250px;
+}
+
+.re_explanation {
+    margin-top: 10px;
+    
+    font-size: 20px;
+    padding-top: 28px;
+    padding: 28px 10px 10px 10px;
+}

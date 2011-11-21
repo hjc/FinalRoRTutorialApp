@@ -4,6 +4,8 @@ describe RegularExpressionsController do
 
   describe "GET 'show'"
   
+  render_views
+  
   it "should be successful" do
     get :show
     response.should be_success

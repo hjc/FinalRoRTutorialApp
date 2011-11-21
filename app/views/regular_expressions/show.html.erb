@@ -1,0 +1,45 @@
+<h1>Test Ruby Regular Expressions</h1>
+
+<%= form_tag '/regular_expressions/proc' do %>
+<div class ="re_title">Your Regular Expression</div>
+  <div class="field_start">
+    <%= label_tag '/' %>
+    <%= text_field_tag :body, @body, :id => "regex_body" %>
+    <%= label_tag '/' %>
+    <%= text_field_tag :opts, @opts, :id => "regex_opts" %>
+  </div>
+  <div class="re_body">
+    <%= label_tag "Your Search String:" %>
+    <%= label_tag "Your Search Results: ", nil, :id => "regex_result_label" if !@results.nil? %>
+    <br />
+    <%= text_area_tag :string, @string, :id => "regex_string" %>
+    <%= text_field_tag :results, @results, :id => "regex_result" if !@results.nil? %>
+  </div>
+  <div>
+    <%= submit_tag 'Run Regular Expression' %>
+  </div>
+<% end %>
+
+<fieldset class="re_explanation">
+  <p>
+    Regular Expression Options
+    <br />
+    <ul>
+      <li>i -- Case Insensitive Search</li>
+      <li>m -- Match Newlines</li>
+      <li>x -- Ignore Whitespace Between Regex Tokens</li>
+      <li>o -- Cause Any Substitutions to be Performed Just Once</li>
+    </ul>
+  
+    <br />
+    Directions
+    <br /> 
+    Enter your regular expression in between the two / /
+    <br />
+    Enter your regular expression options after the second /
+    <br />
+    Enter the text you would like to search in the text area labeled: 
+    <br />
+    Your search string
+  </p>
+</fieldset>
